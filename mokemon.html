@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOKEPON!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <section id="selectMascota">
+        <H1 class="title">MOKEPON!! 🔥 🌊 🌳</H1>
+        <h2 class="subtitulo">Elige a tu mascota:</h2>
+        <div class="tarjetas">
+            <input type="radio" id="hipomar" name="mascota">
+            <label class="tarjetaMokepon" for="hipomar">
+                <p>Hipomar</p><img src="./assets/mokepons_mokepon_hipodoge_attack.webp" alt="hipomar">
+            </label>
+            <br>
+            <input type="radio" id="arboldilla" name="mascota">
+            <label class="tarjetaMokepon" for="arboldilla">
+                <p>Arboldilla</p><img src="./assets/mokepons_mokepon_capipepo_attack.webp" alt="arboldilla">
+            </label>
+            <br>
+            <input type="radio" id="llamalobo" name="mascota">
+            <label class="tarjetaMokepon" for="llamalobo">
+                <p>Llamalobo</p><img src="./assets/mokepons_mokepon_ratigueya_attack.webp" alt="llamalobo">
+            </label>
+            <br>
+        </div>
+        <button type="button" class="btn btn-secondary" id="boton-mascota">Seleccionar</button>
+    </section>
+
+    <section id="selectAtaques">
+
+        <H1 class="title">MOKEPON!! 🔥 🌊 🌳</H1>
+        <h2 class="subtitulo">Elige tu ataque:</h2>
+        <div class="botonesAtaques">
+            <button type="button" class="btn btn-danger" id="boton-fuego">Fuego 🔥</button>
+            <button type="button" class="btn btn-primary" id="boton-agua">Agua 🌊</button>
+            <button type="button" class="btn btn-success" id="boton-planta">Planta 🌳</button>
+        </div>
+        <div class="ataques">
+            <div>
+                <!-- <p>Tu mascota <span id="mascotaJugador"></span> tiene <span id="vidaPlayer">3</span> vidas.</p> -->
+                <p id="mascotaJugador"></p>
+                <p id="vidaPlayer">3</p>
+                <div id="playerAttacks"></div>
+            </div>
+            <div>
+                <!-- <p>La mascota <span id="mascotaRival"></span> del rival tiene <span id="vidaRival">3</span> vidas.</p> -->
+                <p id="mascotaRival"></p>
+                <p id="vidaRival">3</p>
+                <div id="pcAttacks"></div>
+            </div>
+        </div>
+
+        <div id="mensaje">
+            <p id="combate">Elige un ataque!</p>
+            <div id="restart">
+                <button type="button" class="btn btn-warning" id="boton-reiniciar">Reiniciar</button>
+            </div>
+        </div>
+    </section>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
